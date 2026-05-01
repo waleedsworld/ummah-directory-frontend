@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 
-const API_BASE_URL = 'http://127.0.0.1:5051';
+const API_BASE_URL = 'https://aitest.techrealm.online';
 const ASSISTANT_CONNECTION_MESSAGE = 'The directory assistant is reconnecting right now. Please try again in a moment.';
 
 const starters = [

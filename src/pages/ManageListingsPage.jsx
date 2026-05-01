@@ -3,7 +3,7 @@ import Footer from '../components/Footer';
 import SafeImage from '../components/SafeImage';
 import { allCategories } from '../data/travelData';
 
-const API_BASE_URL = 'http://127.0.0.1:5051';
+const API_BASE_URL = 'https://aitest.techrealm.online';
 
 const inputClass = 'w-full border border-[#1F3E3D]/18 bg-[#F8F4EC] px-3 py-3 text-sm text-[#1F3E3D] outline-none transition-colors focus:border-[#9B7C43]';
 

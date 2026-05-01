@@ -3,7 +3,7 @@ import Footer from '../components/Footer';
 import { getCategoryForListing, getListing, listings, normalizeApiListing } from '../data/travelData';
 import SafeImage from '../components/SafeImage';
 
-const API_BASE_URL = 'http://127.0.0.1:5051';
+const API_BASE_URL = 'https://aitest.techrealm.online';
 
 const GuideLabel = ({ children, light = false }) => (
   <div className={`font-oswald text-[11px] uppercase tracking-[0.24em] ${light ? 'text-white/72' : 'text-[#9B7C43]'}`}>{children}</div>

@@ -1,7 +1,7 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import Footer from '../components/Footer';
 
-const API_BASE_URL = 'http://127.0.0.1:5051';
+const API_BASE_URL = 'https://aitest.techrealm.online';
 
 const inputClass = 'w-full border border-[#1F3E3D]/18 bg-[#F8F4EC] px-3 py-3 text-sm outline-none focus:border-[#9B7C43]';
 

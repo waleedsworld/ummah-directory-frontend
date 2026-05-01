@@ -2,7 +2,7 @@ import rawCategories from './ummahdirectory/categories.json';
 import rawListings from './ummahdirectory/listings.json';
 import aboutCopy from './ummahdirectory/vision_and_mission.txt?raw';
 
-export const API_BASE_URL = 'http://127.0.0.1:5051';
+export const API_BASE_URL = 'https://aitest.techrealm.online';
 export const ummahAbout = aboutCopy.trim().replace(/Ummah Directory/g, 'Ummah Directory');
 export const sourceMeta = {
   name: 'Ummah Directory',
