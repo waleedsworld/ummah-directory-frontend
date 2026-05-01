@@ -1,0 +1,132 @@
+id,name,slug,parent_id,parent_name,count,url
+1485,Accountants,accountants,1630,Professional Services,6,https://ummahdirectory.com.au/category/professional-services/accountants/
+1566,Air Conditioning,air-conditioning,1373,Home & Construction,0,https://ummahdirectory.com.au/category/trades/air-conditioning/
+1640,Airlines,airlines,1378,Commerce,0,https://ummahdirectory.com.au/category/commerce/airlines/
+97,All,uncategorised,0,,1,https://ummahdirectory.com.au/category/uncategorised/
+1595,Aluminium & Steel,aluminium-steel,1373,Home & Construction,0,https://ummahdirectory.com.au/category/trades/aluminium-steel/
+2077,Australian Canberra Territory,australian-canberra-territory,97,All,1,https://ummahdirectory.com.au/category/uncategorised/australian-canberra-territory/
+2080,Australian Capital Territory,australian-capital-territory,0,,6,https://ummahdirectory.com.au/category/australian-capital-territory/
+1513,Auto,auto,0,,11,https://ummahdirectory.com.au/category/auto/
+1578,Bakeries,bakeries,1371,Food and Beverage,1,https://ummahdirectory.com.au/category/food-and-beverage/bakeries/
+1596,Bathroom Accessories,bathroom-accessories,1373,Home & Construction,0,https://ummahdirectory.com.au/category/trades/bathroom-accessories/
+1569,Beauty,beauticians,0,,8,https://ummahdirectory.com.au/category/beauticians/
+1597,Bin Hire & Excavations,bin-hire-excavations,1373,Home & Construction,0,https://ummahdirectory.com.au/category/trades/bin-hire-excavations/
+1598,Blinds & Curtains,blinds-curtains,1373,Home & Construction,0,https://ummahdirectory.com.au/category/trades/blinds-curtains/
+1599,Bricklayers,bricklayers,1373,Home & Construction,1,https://ummahdirectory.com.au/category/trades/bricklayers/
+1570,Bridal,bridal,1395,Event Planning,0,https://ummahdirectory.com.au/category/event-planning/bridal/
+1600,Builders,builders,1373,Home & Construction,1,https://ummahdirectory.com.au/category/trades/builders/
+1579,Cafes,cafes,1371,Food and Beverage,10,https://ummahdirectory.com.au/category/food-and-beverage/cafes/
+1580,Cakes & Sweets,cakes-sweets,1371,Food and Beverage,14,https://ummahdirectory.com.au/category/food-and-beverage/cakes-sweets/
+2073,Canberra,canberra,0,,0,https://ummahdirectory.com.au/category/canberra/
+1601,Carpenters,carpenters,1373,Home & Construction,2,https://ummahdirectory.com.au/category/trades/carpenters/
+1602,Carpet & Rugs,carpet-rugs,1373,Home & Construction,0,https://ummahdirectory.com.au/category/trades/carpet-rugs/
+1971,Catering,catering,1395,Event Planning,2,https://ummahdirectory.com.au/category/event-planning/catering/
+1476,Charities,charities,0,,16,https://ummahdirectory.com.au/category/charities/
+1527,Chemists,chemists,1410,Medical,4,https://ummahdirectory.com.au/category/medical/chemists/
+1574,Child Care Services,child-care-services,1492,Education,2,https://ummahdirectory.com.au/category/education/child-care-services/
+1603,Cleaning,cleaning,1373,Home & Construction,0,https://ummahdirectory.com.au/category/trades/cleaning/
+1413,Clothing,clothing,0,,17,https://ummahdirectory.com.au/category/clothing/
+1378,Commerce,commerce,0,,5,https://ummahdirectory.com.au/category/commerce/
+1822,Commercial Interiors,commercial-interiors,1373,Home & Construction,1,https://ummahdirectory.com.au/category/trades/commercial-interiors/
+1571,Computers,computers,0,,2,https://ummahdirectory.com.au/category/computers/
+1604,Concreting,concreting,1373,Home & Construction,0,https://ummahdirectory.com.au/category/trades/concreting/
+1605,Conveyancing,conveyancing,1373,Home & Construction,0,https://ummahdirectory.com.au/category/trades/conveyancing/
+1529,Cupping,cupping,1410,Medical,3,https://ummahdirectory.com.au/category/medical/cupping/
+1387,Dentists,dentists,1410,Medical,3,https://ummahdirectory.com.au/category/medical/dentists/
+1523,Disability Services,disability-services,1410,Medical,2,https://ummahdirectory.com.au/category/medical/disability-services/
+1525,Doctors (Female),doctors-female,1410,Medical,7,https://ummahdirectory.com.au/category/medical/doctors-female/
+1524,Doctors (Male),doctors-male,1410,Medical,8,https://ummahdirectory.com.au/category/medical/doctors-male/
+1462,Driving Schools,auto-driving-schools,1513,Auto,3,https://ummahdirectory.com.au/category/auto/auto-driving-schools/
+1492,Education,education,0,,35,https://ummahdirectory.com.au/category/education/
+1606,Electrical & Data,electrical-data,1373,Home & Construction,5,https://ummahdirectory.com.au/category/trades/electrical-data/
+1632,Embroidery,embroidery,1413,Clothing,0,https://ummahdirectory.com.au/category/clothing/embroidery/
+1395,Event Planning,event-planning,0,,13,https://ummahdirectory.com.au/category/event-planning/
+1607,Fencing,fencing,1373,Home & Construction,0,https://ummahdirectory.com.au/category/trades/fencing/
+1872,Film Production,film-production,1395,Event Planning,1,https://ummahdirectory.com.au/category/event-planning/film-production/
+1635,Financial Advisors,financial-advisors,1630,Professional Services,0,https://ummahdirectory.com.au/category/professional-services/financial-advisors/
+1590,Fitness,fitness,0,,2,https://ummahdirectory.com.au/category/fitness/
+1608,Flooring,flooring,1373,Home & Construction,1,https://ummahdirectory.com.au/category/trades/flooring/
+1371,Food and Beverage,food-and-beverage,0,,248,https://ummahdirectory.com.au/category/food-and-beverage/
+1581,Fruit & Veg,fruit-veg,1371,Food and Beverage,0,https://ummahdirectory.com.au/category/food-and-beverage/fruit-veg/
+1609,Furniture,furniture,1373,Home & Construction,0,https://ummahdirectory.com.au/category/trades/furniture/
+1610,Furniture Removalists,furniture-removalists,1373,Home & Construction,2,https://ummahdirectory.com.au/category/trades/furniture-removalists/
+1551,FX / Money Transfer,fx-money-transfer,1630,Professional Services,0,https://ummahdirectory.com.au/category/professional-services/fx-money-transfer/
+1576,General & Islamic Schools,general-islamic-colleges,1492,Education,29,https://ummahdirectory.com.au/category/education/general-islamic-colleges/
+1582,General Stores,general-stores,1371,Food and Beverage,1,https://ummahdirectory.com.au/category/food-and-beverage/general-stores/
+1589,Giftware,giftshops,1373,Home & Construction,2,https://ummahdirectory.com.au/category/trades/giftshops/
+1611,Glass/Window Replacements,glass-window-replacements,1373,Home & Construction,0,https://ummahdirectory.com.au/category/trades/glass-window-replacements/
+2097,Grazing Boxes,grazing-boxes,1371,Food and Beverage,1,https://ummahdirectory.com.au/category/food-and-beverage/grazing-boxes/
+1591,Gyms,gyms,1590,Fitness,2,https://ummahdirectory.com.au/category/fitness/gyms/
+1594,Hair Removal,hair-removal,1569,Beauty,0,https://ummahdirectory.com.au/category/beauticians/hair-removal/
+1380,Hairdressers,hairdressers,1569,Beauty,4,https://ummahdirectory.com.au/category/beauticians/hairdressers/
+1593,Hairdressers - Female,hairdressers-female,1380,Hairdressers,1,https://ummahdirectory.com.au/category/beauticians/hairdressers/hairdressers-female/
+1592,Hairdressers - Male,hairdressers-male,1380,Hairdressers,2,https://ummahdirectory.com.au/category/beauticians/hairdressers/hairdressers-male/
+1642,Hajj & Umrah Organisers,hajj-umrah-organisers,1378,Commerce,0,https://ummahdirectory.com.au/category/commerce/hajj-umrah-organisers/
+1394,Halal Butchers,halal-butchers,1371,Food and Beverage,23,https://ummahdirectory.com.au/category/food-and-beverage/halal-butchers/
+1583,Halal Certification,halal-certification,1371,Food and Beverage,0,https://ummahdirectory.com.au/category/food-and-beverage/halal-certification/
+1612,Heating & Cooling,heating-cooling,1373,Home & Construction,0,https://ummahdirectory.com.au/category/trades/heating-cooling/
+1373,Home & Construction,trades,0,,36,https://ummahdirectory.com.au/category/trades/
+1584,Industrial Food Machinery,industrial-food-machinery,1371,Food and Beverage,0,https://ummahdirectory.com.au/category/food-and-beverage/industrial-food-machinery/
+1838,Interior Design,interior-design,1373,Home & Construction,1,https://ummahdirectory.com.au/category/trades/interior-design/
+1549,Islamic Finance,islamic,1630,Professional Services,5,https://ummahdirectory.com.au/category/professional-services/islamic/
+1629,Jewellery,jewellery,1569,Beauty,2,https://ummahdirectory.com.au/category/beauticians/jewellery/
+1585,Juices,juices,1371,Food and Beverage,0,https://ummahdirectory.com.au/category/food-and-beverage/juices/
+1613,Key Cutting,key-cutting,1373,Home & Construction,0,https://ummahdirectory.com.au/category/trades/key-cutting/
+1614,Kitchen & Cabinet Makers,kitchen-cabinet-makers,1373,Home & Construction,2,https://ummahdirectory.com.au/category/trades/kitchen-cabinet-makers/
+1693,Kitchenware,kitchenware,1373,Home & Construction,1,https://ummahdirectory.com.au/category/trades/kitchenware/
+1615,Landscaping,landscaping,1373,Home & Construction,3,https://ummahdirectory.com.au/category/trades/landscaping/
+1415,Lawyers,lawyers,1630,Professional Services,5,https://ummahdirectory.com.au/category/professional-services/lawyers/
+2087,Leisure,leisure,1395,Event Planning,1,https://ummahdirectory.com.au/category/event-planning/leisure/
+1616,Manchester & Bedding,manchester-bedding,1373,Home & Construction,1,https://ummahdirectory.com.au/category/trades/manchester-bedding/
+1379,Markets and Butchers,markets-and-butchers,1371,Food and Beverage,10,https://ummahdirectory.com.au/category/food-and-beverage/markets-and-butchers/
+1631,Marriage Celebrants,marriage-celebrants,1395,Event Planning,0,https://ummahdirectory.com.au/category/event-planning/marriage-celebrants/
+1633,Martial Arts,martial-arts,1590,Fitness,0,https://ummahdirectory.com.au/category/fitness/martial-arts/
+1467,Mechanics,auto-mechanics,1513,Auto,4,https://ummahdirectory.com.au/category/auto/auto-mechanics/
+1410,Medical,medical,0,,27,https://ummahdirectory.com.au/category/medical/
+1634,Migration Agents,migration-agents,1630,Professional Services,0,https://ummahdirectory.com.au/category/professional-services/migration-agents/
+1514,Mosques,mosque-musalla,0,,162,https://ummahdirectory.com.au/category/mosque-musalla/
+1876,New South Wales,new-south-wales,0,,28,https://ummahdirectory.com.au/category/new-south-wales/
+1474,Nursery,nursery,1589,Giftware,2,https://ummahdirectory.com.au/category/trades/giftshops/nursery/
+2065,Nutrition,nutrition-beauticians,1569,Beauty,2,https://ummahdirectory.com.au/category/beauticians/nutrition-beauticians/
+2064,Nutrition,nutrition,0,,0,https://ummahdirectory.com.au/category/nutrition/
+1453,Optometrist,optometrist,1410,Medical,1,https://ummahdirectory.com.au/category/medical/optometrist/
+1617,Painters,painters,1373,Home & Construction,0,https://ummahdirectory.com.au/category/trades/painters/
+1785,Parts,parts,1513,Auto,1,https://ummahdirectory.com.au/category/auto/parts/
+1618,Pest Control,pest-control,1373,Home & Construction,1,https://ummahdirectory.com.au/category/trades/pest-control/
+1636,Photography,photography,1395,Event Planning,1,https://ummahdirectory.com.au/category/event-planning/photography/
+1619,Plumbing,plumbing,1373,Home & Construction,1,https://ummahdirectory.com.au/category/trades/plumbing/
+1638,Print Design & Signmakers,print-design-signmakers,1378,Commerce,1,https://ummahdirectory.com.au/category/commerce/print-design-signmakers/
+1630,Professional Services,professional-services,0,,11,https://ummahdirectory.com.au/category/professional-services/
+1621,Property Management,property-management,1373,Home & Construction,0,https://ummahdirectory.com.au/category/trades/property-management/
+1530,Psychologists & Counsellors,psychologists-counsellors,1410,Medical,3,https://ummahdirectory.com.au/category/medical/psychologists-counsellors/
+1874,Queensland,queensland,0,,2,https://ummahdirectory.com.au/category/queensland/
+1622,Real Estate,real-estate,1373,Home & Construction,1,https://ummahdirectory.com.au/category/trades/real-estate/
+1623,Refrigeration Services,refrigeration-services,1373,Home & Construction,0,https://ummahdirectory.com.au/category/trades/refrigeration-services/
+1620,Renovations & Paving,renovations-paving,1373,Home & Construction,0,https://ummahdirectory.com.au/category/trades/renovations-paving/
+1586,Restaurants & Takeaway,restaurants-takeaway,1371,Food and Beverage,188,https://ummahdirectory.com.au/category/food-and-beverage/restaurants-takeaway/
+1572,Sales & Repairs,sales-repairs,1571,Computers,0,https://ummahdirectory.com.au/category/computers/sales-repairs/
+1624,Sanding,sanding,1373,Home & Construction,1,https://ummahdirectory.com.au/category/trades/sanding/
+1626,Scaffolding,scaffolding,1373,Home & Construction,0,https://ummahdirectory.com.au/category/trades/scaffolding/
+1587,Seafood,seafood,1371,Food and Beverage,0,https://ummahdirectory.com.au/category/food-and-beverage/seafood/
+1625,Sealing,sealing,1373,Home & Construction,0,https://ummahdirectory.com.au/category/trades/sealing/
+1637,Security,security,1373,Home & Construction,1,https://ummahdirectory.com.au/category/trades/security/
+1639,Skincare,skincare,1569,Beauty,2,https://ummahdirectory.com.au/category/beauticians/skincare/
+1878,South Australia,south-australia,0,,1,https://ummahdirectory.com.au/category/south-australia/
+1588,Spices & Herbs,spices-herbs,1371,Food and Beverage,0,https://ummahdirectory.com.au/category/food-and-beverage/spices-herbs/
+1875,Tasmania,tasmania,0,,0,https://ummahdirectory.com.au/category/tasmania/
+1705,Teeth Whitening,teeth-whitening,1569,Beauty,3,https://ummahdirectory.com.au/category/beauticians/teeth-whitening/
+1627,Tilers,tilers,1373,Home & Construction,1,https://ummahdirectory.com.au/category/trades/tilers/
+1567,Towing,towing,1513,Auto,3,https://ummahdirectory.com.au/category/auto/towing/
+1577,Training,training,1492,Education,2,https://ummahdirectory.com.au/category/education/training/
+1816,Translation,translation,1630,Professional Services,1,https://ummahdirectory.com.au/category/professional-services/translation/
+1641,Travel Agents,travel-agents,1378,Commerce,3,https://ummahdirectory.com.au/category/commerce/travel-agents/
+1575,Tutoring,tutoring,1492,Education,1,https://ummahdirectory.com.au/category/education/tutoring/
+1479,Ummah Partner,ummah-partners,0,,0,https://ummahdirectory.com.au/category/ummah-partners/
+1873,Victoria,victoria,0,,297,https://ummahdirectory.com.au/category/victoria/
+1628,Waterproofing,waterproofing,1373,Home & Construction,1,https://ummahdirectory.com.au/category/trades/waterproofing/
+1550,Wealth Management,wealth-management,1630,Professional Services,2,https://ummahdirectory.com.au/category/professional-services/wealth-management/
+1573,Website Development,website-development,1571,Computers,1,https://ummahdirectory.com.au/category/computers/website-development/
+1877,Western Australia,western-australia,0,,4,https://ummahdirectory.com.au/category/western-australia/
+1468,Wheels & Tyres,auto-wheels-tyres,1513,Auto,4,https://ummahdirectory.com.au/category/auto/auto-wheels-tyres/
+1862,Windows,windows,1373,Home & Construction,2,https://ummahdirectory.com.au/category/trades/windows/
+1568,Wreckers,wreckers,1513,Auto,0,https://ummahdirectory.com.au/category/auto/wreckers/

@@ -1,0 +1,1181 @@
+[
+  {
+    "id": 1485,
+    "name": "Accountants",
+    "slug": "accountants",
+    "parent_id": 1630,
+    "parent_name": "Professional Services",
+    "count": 6,
+    "url": "https://ummahdirectory.com.au/category/professional-services/accountants/"
+  },
+  {
+    "id": 1566,
+    "name": "Air Conditioning",
+    "slug": "air-conditioning",
+    "parent_id": 1373,
+    "parent_name": "Home & Construction",
+    "count": 0,
+    "url": "https://ummahdirectory.com.au/category/trades/air-conditioning/"
+  },
+  {
+    "id": 1640,
+    "name": "Airlines",
+    "slug": "airlines",
+    "parent_id": 1378,
+    "parent_name": "Commerce",
+    "count": 0,
+    "url": "https://ummahdirectory.com.au/category/commerce/airlines/"
+  },
+  {
+    "id": 97,
+    "name": "All",
+    "slug": "uncategorised",
+    "parent_id": 0,
+    "parent_name": "",
+    "count": 1,
+    "url": "https://ummahdirectory.com.au/category/uncategorised/"
+  },
+  {
+    "id": 1595,
+    "name": "Aluminium & Steel",
+    "slug": "aluminium-steel",
+    "parent_id": 1373,
+    "parent_name": "Home & Construction",
+    "count": 0,
+    "url": "https://ummahdirectory.com.au/category/trades/aluminium-steel/"
+  },
+  {
+    "id": 2077,
+    "name": "Australian Canberra Territory",
+    "slug": "australian-canberra-territory",
+    "parent_id": 97,
+    "parent_name": "All",
+    "count": 1,
+    "url": "https://ummahdirectory.com.au/category/uncategorised/australian-canberra-territory/"
+  },
+  {
+    "id": 2080,
+    "name": "Australian Capital Territory",
+    "slug": "australian-capital-territory",
+    "parent_id": 0,
+    "parent_name": "",
+    "count": 6,
+    "url": "https://ummahdirectory.com.au/category/australian-capital-territory/"
+  },
+  {
+    "id": 1513,
+    "name": "Auto",
+    "slug": "auto",
+    "parent_id": 0,
+    "parent_name": "",
+    "count": 11,
+    "url": "https://ummahdirectory.com.au/category/auto/"
+  },
+  {
+    "id": 1578,
+    "name": "Bakeries",
+    "slug": "bakeries",
+    "parent_id": 1371,
+    "parent_name": "Food and Beverage",
+    "count": 1,
+    "url": "https://ummahdirectory.com.au/category/food-and-beverage/bakeries/"
+  },
+  {
+    "id": 1596,
+    "name": "Bathroom Accessories",
+    "slug": "bathroom-accessories",
+    "parent_id": 1373,
+    "parent_name": "Home & Construction",
+    "count": 0,
+    "url": "https://ummahdirectory.com.au/category/trades/bathroom-accessories/"
+  },
+  {
+    "id": 1569,
+    "name": "Beauty",
+    "slug": "beauticians",
+    "parent_id": 0,
+    "parent_name": "",
+    "count": 8,
+    "url": "https://ummahdirectory.com.au/category/beauticians/"
+  },
+  {
+    "id": 1597,
+    "name": "Bin Hire & Excavations",
+    "slug": "bin-hire-excavations",
+    "parent_id": 1373,
+    "parent_name": "Home & Construction",
+    "count": 0,
+    "url": "https://ummahdirectory.com.au/category/trades/bin-hire-excavations/"
+  },
+  {
+    "id": 1598,
+    "name": "Blinds & Curtains",
+    "slug": "blinds-curtains",
+    "parent_id": 1373,
+    "parent_name": "Home & Construction",
+    "count": 0,
+    "url": "https://ummahdirectory.com.au/category/trades/blinds-curtains/"
+  },
+  {
+    "id": 1599,
+    "name": "Bricklayers",
+    "slug": "bricklayers",
+    "parent_id": 1373,
+    "parent_name": "Home & Construction",
+    "count": 1,
+    "url": "https://ummahdirectory.com.au/category/trades/bricklayers/"
+  },
+  {
+    "id": 1570,
+    "name": "Bridal",
+    "slug": "bridal",
+    "parent_id": 1395,
+    "parent_name": "Event Planning",
+    "count": 0,
+    "url": "https://ummahdirectory.com.au/category/event-planning/bridal/"
+  },
+  {
+    "id": 1600,
+    "name": "Builders",
+    "slug": "builders",
+    "parent_id": 1373,
+    "parent_name": "Home & Construction",
+    "count": 1,
+    "url": "https://ummahdirectory.com.au/category/trades/builders/"
+  },
+  {
+    "id": 1579,
+    "name": "Cafes",
+    "slug": "cafes",
+    "parent_id": 1371,
+    "parent_name": "Food and Beverage",
+    "count": 10,
+    "url": "https://ummahdirectory.com.au/category/food-and-beverage/cafes/"
+  },
+  {
+    "id": 1580,
+    "name": "Cakes & Sweets",
+    "slug": "cakes-sweets",
+    "parent_id": 1371,
+    "parent_name": "Food and Beverage",
+    "count": 14,
+    "url": "https://ummahdirectory.com.au/category/food-and-beverage/cakes-sweets/"
+  },
+  {
+    "id": 2073,
+    "name": "Canberra",
+    "slug": "canberra",
+    "parent_id": 0,
+    "parent_name": "",
+    "count": 0,
+    "url": "https://ummahdirectory.com.au/category/canberra/"
+  },
+  {
+    "id": 1601,
+    "name": "Carpenters",
+    "slug": "carpenters",
+    "parent_id": 1373,
+    "parent_name": "Home & Construction",
+    "count": 2,
+    "url": "https://ummahdirectory.com.au/category/trades/carpenters/"
+  },
+  {
+    "id": 1602,
+    "name": "Carpet & Rugs",
+    "slug": "carpet-rugs",
+    "parent_id": 1373,
+    "parent_name": "Home & Construction",
+    "count": 0,
+    "url": "https://ummahdirectory.com.au/category/trades/carpet-rugs/"
+  },
+  {
+    "id": 1971,
+    "name": "Catering",
+    "slug": "catering",
+    "parent_id": 1395,
+    "parent_name": "Event Planning",
+    "count": 2,
+    "url": "https://ummahdirectory.com.au/category/event-planning/catering/"
+  },
+  {
+    "id": 1476,
+    "name": "Charities",
+    "slug": "charities",
+    "parent_id": 0,
+    "parent_name": "",
+    "count": 16,
+    "url": "https://ummahdirectory.com.au/category/charities/"
+  },
+  {
+    "id": 1527,
+    "name": "Chemists",
+    "slug": "chemists",
+    "parent_id": 1410,
+    "parent_name": "Medical",
+    "count": 4,
+    "url": "https://ummahdirectory.com.au/category/medical/chemists/"
+  },
+  {
+    "id": 1574,
+    "name": "Child Care Services",
+    "slug": "child-care-services",
+    "parent_id": 1492,
+    "parent_name": "Education",
+    "count": 2,
+    "url": "https://ummahdirectory.com.au/category/education/child-care-services/"
+  },
+  {
+    "id": 1603,
+    "name": "Cleaning",
+    "slug": "cleaning",
+    "parent_id": 1373,
+    "parent_name": "Home & Construction",
+    "count": 0,
+    "url": "https://ummahdirectory.com.au/category/trades/cleaning/"
+  },
+  {
+    "id": 1413,
+    "name": "Clothing",
+    "slug": "clothing",
+    "parent_id": 0,
+    "parent_name": "",
+    "count": 17,
+    "url": "https://ummahdirectory.com.au/category/clothing/"
+  },
+  {
+    "id": 1378,
+    "name": "Commerce",
+    "slug": "commerce",
+    "parent_id": 0,
+    "parent_name": "",
+    "count": 5,
+    "url": "https://ummahdirectory.com.au/category/commerce/"
+  },
+  {
+    "id": 1822,
+    "name": "Commercial Interiors",
+    "slug": "commercial-interiors",
+    "parent_id": 1373,
+    "parent_name": "Home & Construction",
+    "count": 1,
+    "url": "https://ummahdirectory.com.au/category/trades/commercial-interiors/"
+  },
+  {
+    "id": 1571,
+    "name": "Computers",
+    "slug": "computers",
+    "parent_id": 0,
+    "parent_name": "",
+    "count": 2,
+    "url": "https://ummahdirectory.com.au/category/computers/"
+  },
+  {
+    "id": 1604,
+    "name": "Concreting",
+    "slug": "concreting",
+    "parent_id": 1373,
+    "parent_name": "Home & Construction",
+    "count": 0,
+    "url": "https://ummahdirectory.com.au/category/trades/concreting/"
+  },
+  {
+    "id": 1605,
+    "name": "Conveyancing",
+    "slug": "conveyancing",
+    "parent_id": 1373,
+    "parent_name": "Home & Construction",
+    "count": 0,
+    "url": "https://ummahdirectory.com.au/category/trades/conveyancing/"
+  },
+  {
+    "id": 1529,
+    "name": "Cupping",
+    "slug": "cupping",
+    "parent_id": 1410,
+    "parent_name": "Medical",
+    "count": 3,
+    "url": "https://ummahdirectory.com.au/category/medical/cupping/"
+  },
+  {
+    "id": 1387,
+    "name": "Dentists",
+    "slug": "dentists",
+    "parent_id": 1410,
+    "parent_name": "Medical",
+    "count": 3,
+    "url": "https://ummahdirectory.com.au/category/medical/dentists/"
+  },
+  {
+    "id": 1523,
+    "name": "Disability Services",
+    "slug": "disability-services",
+    "parent_id": 1410,
+    "parent_name": "Medical",
+    "count": 2,
+    "url": "https://ummahdirectory.com.au/category/medical/disability-services/"
+  },
+  {
+    "id": 1525,
+    "name": "Doctors (Female)",
+    "slug": "doctors-female",
+    "parent_id": 1410,
+    "parent_name": "Medical",
+    "count": 7,
+    "url": "https://ummahdirectory.com.au/category/medical/doctors-female/"
+  },
+  {
+    "id": 1524,
+    "name": "Doctors (Male)",
+    "slug": "doctors-male",
+    "parent_id": 1410,
+    "parent_name": "Medical",
+    "count": 8,
+    "url": "https://ummahdirectory.com.au/category/medical/doctors-male/"
+  },
+  {
+    "id": 1462,
+    "name": "Driving Schools",
+    "slug": "auto-driving-schools",
+    "parent_id": 1513,
+    "parent_name": "Auto",
+    "count": 3,
+    "url": "https://ummahdirectory.com.au/category/auto/auto-driving-schools/"
+  },
+  {
+    "id": 1492,
+    "name": "Education",
+    "slug": "education",
+    "parent_id": 0,
+    "parent_name": "",
+    "count": 35,
+    "url": "https://ummahdirectory.com.au/category/education/"
+  },
+  {
+    "id": 1606,
+    "name": "Electrical & Data",
+    "slug": "electrical-data",
+    "parent_id": 1373,
+    "parent_name": "Home & Construction",
+    "count": 5,
+    "url": "https://ummahdirectory.com.au/category/trades/electrical-data/"
+  },
+  {
+    "id": 1632,
+    "name": "Embroidery",
+    "slug": "embroidery",
+    "parent_id": 1413,
+    "parent_name": "Clothing",
+    "count": 0,
+    "url": "https://ummahdirectory.com.au/category/clothing/embroidery/"
+  },
+  {
+    "id": 1395,
+    "name": "Event Planning",
+    "slug": "event-planning",
+    "parent_id": 0,
+    "parent_name": "",
+    "count": 13,
+    "url": "https://ummahdirectory.com.au/category/event-planning/"
+  },
+  {
+    "id": 1607,
+    "name": "Fencing",
+    "slug": "fencing",
+    "parent_id": 1373,
+    "parent_name": "Home & Construction",
+    "count": 0,
+    "url": "https://ummahdirectory.com.au/category/trades/fencing/"
+  },
+  {
+    "id": 1872,
+    "name": "Film Production",
+    "slug": "film-production",
+    "parent_id": 1395,
+    "parent_name": "Event Planning",
+    "count": 1,
+    "url": "https://ummahdirectory.com.au/category/event-planning/film-production/"
+  },
+  {
+    "id": 1635,
+    "name": "Financial Advisors",
+    "slug": "financial-advisors",
+    "parent_id": 1630,
+    "parent_name": "Professional Services",
+    "count": 0,
+    "url": "https://ummahdirectory.com.au/category/professional-services/financial-advisors/"
+  },
+  {
+    "id": 1590,
+    "name": "Fitness",
+    "slug": "fitness",
+    "parent_id": 0,
+    "parent_name": "",
+    "count": 2,
+    "url": "https://ummahdirectory.com.au/category/fitness/"
+  },
+  {
+    "id": 1608,
+    "name": "Flooring",
+    "slug": "flooring",
+    "parent_id": 1373,
+    "parent_name": "Home & Construction",
+    "count": 1,
+    "url": "https://ummahdirectory.com.au/category/trades/flooring/"
+  },
+  {
+    "id": 1371,
+    "name": "Food and Beverage",
+    "slug": "food-and-beverage",
+    "parent_id": 0,
+    "parent_name": "",
+    "count": 248,
+    "url": "https://ummahdirectory.com.au/category/food-and-beverage/"
+  },
+  {
+    "id": 1581,
+    "name": "Fruit & Veg",
+    "slug": "fruit-veg",
+    "parent_id": 1371,
+    "parent_name": "Food and Beverage",
+    "count": 0,
+    "url": "https://ummahdirectory.com.au/category/food-and-beverage/fruit-veg/"
+  },
+  {
+    "id": 1609,
+    "name": "Furniture",
+    "slug": "furniture",
+    "parent_id": 1373,
+    "parent_name": "Home & Construction",
+    "count": 0,
+    "url": "https://ummahdirectory.com.au/category/trades/furniture/"
+  },
+  {
+    "id": 1610,
+    "name": "Furniture Removalists",
+    "slug": "furniture-removalists",
+    "parent_id": 1373,
+    "parent_name": "Home & Construction",
+    "count": 2,
+    "url": "https://ummahdirectory.com.au/category/trades/furniture-removalists/"
+  },
+  {
+    "id": 1551,
+    "name": "FX / Money Transfer",
+    "slug": "fx-money-transfer",
+    "parent_id": 1630,
+    "parent_name": "Professional Services",
+    "count": 0,
+    "url": "https://ummahdirectory.com.au/category/professional-services/fx-money-transfer/"
+  },
+  {
+    "id": 1576,
+    "name": "General & Islamic Schools",
+    "slug": "general-islamic-colleges",
+    "parent_id": 1492,
+    "parent_name": "Education",
+    "count": 29,
+    "url": "https://ummahdirectory.com.au/category/education/general-islamic-colleges/"
+  },
+  {
+    "id": 1582,
+    "name": "General Stores",
+    "slug": "general-stores",
+    "parent_id": 1371,
+    "parent_name": "Food and Beverage",
+    "count": 1,
+    "url": "https://ummahdirectory.com.au/category/food-and-beverage/general-stores/"
+  },
+  {
+    "id": 1589,
+    "name": "Giftware",
+    "slug": "giftshops",
+    "parent_id": 1373,
+    "parent_name": "Home & Construction",
+    "count": 2,
+    "url": "https://ummahdirectory.com.au/category/trades/giftshops/"
+  },
+  {
+    "id": 1611,
+    "name": "Glass/Window Replacements",
+    "slug": "glass-window-replacements",
+    "parent_id": 1373,
+    "parent_name": "Home & Construction",
+    "count": 0,
+    "url": "https://ummahdirectory.com.au/category/trades/glass-window-replacements/"
+  },
+  {
+    "id": 2097,
+    "name": "Grazing Boxes",
+    "slug": "grazing-boxes",
+    "parent_id": 1371,
+    "parent_name": "Food and Beverage",
+    "count": 1,
+    "url": "https://ummahdirectory.com.au/category/food-and-beverage/grazing-boxes/"
+  },
+  {
+    "id": 1591,
+    "name": "Gyms",
+    "slug": "gyms",
+    "parent_id": 1590,
+    "parent_name": "Fitness",
+    "count": 2,
+    "url": "https://ummahdirectory.com.au/category/fitness/gyms/"
+  },
+  {
+    "id": 1594,
+    "name": "Hair Removal",
+    "slug": "hair-removal",
+    "parent_id": 1569,
+    "parent_name": "Beauty",
+    "count": 0,
+    "url": "https://ummahdirectory.com.au/category/beauticians/hair-removal/"
+  },
+  {
+    "id": 1380,
+    "name": "Hairdressers",
+    "slug": "hairdressers",
+    "parent_id": 1569,
+    "parent_name": "Beauty",
+    "count": 4,
+    "url": "https://ummahdirectory.com.au/category/beauticians/hairdressers/"
+  },
+  {
+    "id": 1593,
+    "name": "Hairdressers - Female",
+    "slug": "hairdressers-female",
+    "parent_id": 1380,
+    "parent_name": "Hairdressers",
+    "count": 1,
+    "url": "https://ummahdirectory.com.au/category/beauticians/hairdressers/hairdressers-female/"
+  },
+  {
+    "id": 1592,
+    "name": "Hairdressers - Male",
+    "slug": "hairdressers-male",
+    "parent_id": 1380,
+    "parent_name": "Hairdressers",
+    "count": 2,
+    "url": "https://ummahdirectory.com.au/category/beauticians/hairdressers/hairdressers-male/"
+  },
+  {
+    "id": 1642,
+    "name": "Hajj & Umrah Organisers",
+    "slug": "hajj-umrah-organisers",
+    "parent_id": 1378,
+    "parent_name": "Commerce",
+    "count": 0,
+    "url": "https://ummahdirectory.com.au/category/commerce/hajj-umrah-organisers/"
+  },
+  {
+    "id": 1394,
+    "name": "Halal Butchers",
+    "slug": "halal-butchers",
+    "parent_id": 1371,
+    "parent_name": "Food and Beverage",
+    "count": 23,
+    "url": "https://ummahdirectory.com.au/category/food-and-beverage/halal-butchers/"
+  },
+  {
+    "id": 1583,
+    "name": "Halal Certification",
+    "slug": "halal-certification",
+    "parent_id": 1371,
+    "parent_name": "Food and Beverage",
+    "count": 0,
+    "url": "https://ummahdirectory.com.au/category/food-and-beverage/halal-certification/"
+  },
+  {
+    "id": 1612,
+    "name": "Heating & Cooling",
+    "slug": "heating-cooling",
+    "parent_id": 1373,
+    "parent_name": "Home & Construction",
+    "count": 0,
+    "url": "https://ummahdirectory.com.au/category/trades/heating-cooling/"
+  },
+  {
+    "id": 1373,
+    "name": "Home & Construction",
+    "slug": "trades",
+    "parent_id": 0,
+    "parent_name": "",
+    "count": 36,
+    "url": "https://ummahdirectory.com.au/category/trades/"
+  },
+  {
+    "id": 1584,
+    "name": "Industrial Food Machinery",
+    "slug": "industrial-food-machinery",
+    "parent_id": 1371,
+    "parent_name": "Food and Beverage",
+    "count": 0,
+    "url": "https://ummahdirectory.com.au/category/food-and-beverage/industrial-food-machinery/"
+  },
+  {
+    "id": 1838,
+    "name": "Interior Design",
+    "slug": "interior-design",
+    "parent_id": 1373,
+    "parent_name": "Home & Construction",
+    "count": 1,
+    "url": "https://ummahdirectory.com.au/category/trades/interior-design/"
+  },
+  {
+    "id": 1549,
+    "name": "Islamic Finance",
+    "slug": "islamic",
+    "parent_id": 1630,
+    "parent_name": "Professional Services",
+    "count": 5,
+    "url": "https://ummahdirectory.com.au/category/professional-services/islamic/"
+  },
+  {
+    "id": 1629,
+    "name": "Jewellery",
+    "slug": "jewellery",
+    "parent_id": 1569,
+    "parent_name": "Beauty",
+    "count": 2,
+    "url": "https://ummahdirectory.com.au/category/beauticians/jewellery/"
+  },
+  {
+    "id": 1585,
+    "name": "Juices",
+    "slug": "juices",
+    "parent_id": 1371,
+    "parent_name": "Food and Beverage",
+    "count": 0,
+    "url": "https://ummahdirectory.com.au/category/food-and-beverage/juices/"
+  },
+  {
+    "id": 1613,
+    "name": "Key Cutting",
+    "slug": "key-cutting",
+    "parent_id": 1373,
+    "parent_name": "Home & Construction",
+    "count": 0,
+    "url": "https://ummahdirectory.com.au/category/trades/key-cutting/"
+  },
+  {
+    "id": 1614,
+    "name": "Kitchen & Cabinet Makers",
+    "slug": "kitchen-cabinet-makers",
+    "parent_id": 1373,
+    "parent_name": "Home & Construction",
+    "count": 2,
+    "url": "https://ummahdirectory.com.au/category/trades/kitchen-cabinet-makers/"
+  },
+  {
+    "id": 1693,
+    "name": "Kitchenware",
+    "slug": "kitchenware",
+    "parent_id": 1373,
+    "parent_name": "Home & Construction",
+    "count": 1,
+    "url": "https://ummahdirectory.com.au/category/trades/kitchenware/"
+  },
+  {
+    "id": 1615,
+    "name": "Landscaping",
+    "slug": "landscaping",
+    "parent_id": 1373,
+    "parent_name": "Home & Construction",
+    "count": 3,
+    "url": "https://ummahdirectory.com.au/category/trades/landscaping/"
+  },
+  {
+    "id": 1415,
+    "name": "Lawyers",
+    "slug": "lawyers",
+    "parent_id": 1630,
+    "parent_name": "Professional Services",
+    "count": 5,
+    "url": "https://ummahdirectory.com.au/category/professional-services/lawyers/"
+  },
+  {
+    "id": 2087,
+    "name": "Leisure",
+    "slug": "leisure",
+    "parent_id": 1395,
+    "parent_name": "Event Planning",
+    "count": 1,
+    "url": "https://ummahdirectory.com.au/category/event-planning/leisure/"
+  },
+  {
+    "id": 1616,
+    "name": "Manchester & Bedding",
+    "slug": "manchester-bedding",
+    "parent_id": 1373,
+    "parent_name": "Home & Construction",
+    "count": 1,
+    "url": "https://ummahdirectory.com.au/category/trades/manchester-bedding/"
+  },
+  {
+    "id": 1379,
+    "name": "Markets and Butchers",
+    "slug": "markets-and-butchers",
+    "parent_id": 1371,
+    "parent_name": "Food and Beverage",
+    "count": 10,
+    "url": "https://ummahdirectory.com.au/category/food-and-beverage/markets-and-butchers/"
+  },
+  {
+    "id": 1631,
+    "name": "Marriage Celebrants",
+    "slug": "marriage-celebrants",
+    "parent_id": 1395,
+    "parent_name": "Event Planning",
+    "count": 0,
+    "url": "https://ummahdirectory.com.au/category/event-planning/marriage-celebrants/"
+  },
+  {
+    "id": 1633,
+    "name": "Martial Arts",
+    "slug": "martial-arts",
+    "parent_id": 1590,
+    "parent_name": "Fitness",
+    "count": 0,
+    "url": "https://ummahdirectory.com.au/category/fitness/martial-arts/"
+  },
+  {
+    "id": 1467,
+    "name": "Mechanics",
+    "slug": "auto-mechanics",
+    "parent_id": 1513,
+    "parent_name": "Auto",
+    "count": 4,
+    "url": "https://ummahdirectory.com.au/category/auto/auto-mechanics/"
+  },
+  {
+    "id": 1410,
+    "name": "Medical",
+    "slug": "medical",
+    "parent_id": 0,
+    "parent_name": "",
+    "count": 27,
+    "url": "https://ummahdirectory.com.au/category/medical/"
+  },
+  {
+    "id": 1634,
+    "name": "Migration Agents",
+    "slug": "migration-agents",
+    "parent_id": 1630,
+    "parent_name": "Professional Services",
+    "count": 0,
+    "url": "https://ummahdirectory.com.au/category/professional-services/migration-agents/"
+  },
+  {
+    "id": 1514,
+    "name": "Mosques",
+    "slug": "mosque-musalla",
+    "parent_id": 0,
+    "parent_name": "",
+    "count": 162,
+    "url": "https://ummahdirectory.com.au/category/mosque-musalla/"
+  },
+  {
+    "id": 1876,
+    "name": "New South Wales",
+    "slug": "new-south-wales",
+    "parent_id": 0,
+    "parent_name": "",
+    "count": 28,
+    "url": "https://ummahdirectory.com.au/category/new-south-wales/"
+  },
+  {
+    "id": 1474,
+    "name": "Nursery",
+    "slug": "nursery",
+    "parent_id": 1589,
+    "parent_name": "Giftware",
+    "count": 2,
+    "url": "https://ummahdirectory.com.au/category/trades/giftshops/nursery/"
+  },
+  {
+    "id": 2065,
+    "name": "Nutrition",
+    "slug": "nutrition-beauticians",
+    "parent_id": 1569,
+    "parent_name": "Beauty",
+    "count": 2,
+    "url": "https://ummahdirectory.com.au/category/beauticians/nutrition-beauticians/"
+  },
+  {
+    "id": 2064,
+    "name": "Nutrition",
+    "slug": "nutrition",
+    "parent_id": 0,
+    "parent_name": "",
+    "count": 0,
+    "url": "https://ummahdirectory.com.au/category/nutrition/"
+  },
+  {
+    "id": 1453,
+    "name": "Optometrist",
+    "slug": "optometrist",
+    "parent_id": 1410,
+    "parent_name": "Medical",
+    "count": 1,
+    "url": "https://ummahdirectory.com.au/category/medical/optometrist/"
+  },
+  {
+    "id": 1617,
+    "name": "Painters",
+    "slug": "painters",
+    "parent_id": 1373,
+    "parent_name": "Home & Construction",
+    "count": 0,
+    "url": "https://ummahdirectory.com.au/category/trades/painters/"
+  },
+  {
+    "id": 1785,
+    "name": "Parts",
+    "slug": "parts",
+    "parent_id": 1513,
+    "parent_name": "Auto",
+    "count": 1,
+    "url": "https://ummahdirectory.com.au/category/auto/parts/"
+  },
+  {
+    "id": 1618,
+    "name": "Pest Control",
+    "slug": "pest-control",
+    "parent_id": 1373,
+    "parent_name": "Home & Construction",
+    "count": 1,
+    "url": "https://ummahdirectory.com.au/category/trades/pest-control/"
+  },
+  {
+    "id": 1636,
+    "name": "Photography",
+    "slug": "photography",
+    "parent_id": 1395,
+    "parent_name": "Event Planning",
+    "count": 1,
+    "url": "https://ummahdirectory.com.au/category/event-planning/photography/"
+  },
+  {
+    "id": 1619,
+    "name": "Plumbing",
+    "slug": "plumbing",
+    "parent_id": 1373,
+    "parent_name": "Home & Construction",
+    "count": 1,
+    "url": "https://ummahdirectory.com.au/category/trades/plumbing/"
+  },
+  {
+    "id": 1638,
+    "name": "Print Design & Signmakers",
+    "slug": "print-design-signmakers",
+    "parent_id": 1378,
+    "parent_name": "Commerce",
+    "count": 1,
+    "url": "https://ummahdirectory.com.au/category/commerce/print-design-signmakers/"
+  },
+  {
+    "id": 1630,
+    "name": "Professional Services",
+    "slug": "professional-services",
+    "parent_id": 0,
+    "parent_name": "",
+    "count": 11,
+    "url": "https://ummahdirectory.com.au/category/professional-services/"
+  },
+  {
+    "id": 1621,
+    "name": "Property Management",
+    "slug": "property-management",
+    "parent_id": 1373,
+    "parent_name": "Home & Construction",
+    "count": 0,
+    "url": "https://ummahdirectory.com.au/category/trades/property-management/"
+  },
+  {
+    "id": 1530,
+    "name": "Psychologists & Counsellors",
+    "slug": "psychologists-counsellors",
+    "parent_id": 1410,
+    "parent_name": "Medical",
+    "count": 3,
+    "url": "https://ummahdirectory.com.au/category/medical/psychologists-counsellors/"
+  },
+  {
+    "id": 1874,
+    "name": "Queensland",
+    "slug": "queensland",
+    "parent_id": 0,
+    "parent_name": "",
+    "count": 2,
+    "url": "https://ummahdirectory.com.au/category/queensland/"
+  },
+  {
+    "id": 1622,
+    "name": "Real Estate",
+    "slug": "real-estate",
+    "parent_id": 1373,
+    "parent_name": "Home & Construction",
+    "count": 1,
+    "url": "https://ummahdirectory.com.au/category/trades/real-estate/"
+  },
+  {
+    "id": 1623,
+    "name": "Refrigeration Services",
+    "slug": "refrigeration-services",
+    "parent_id": 1373,
+    "parent_name": "Home & Construction",
+    "count": 0,
+    "url": "https://ummahdirectory.com.au/category/trades/refrigeration-services/"
+  },
+  {
+    "id": 1620,
+    "name": "Renovations & Paving",
+    "slug": "renovations-paving",
+    "parent_id": 1373,
+    "parent_name": "Home & Construction",
+    "count": 0,
+    "url": "https://ummahdirectory.com.au/category/trades/renovations-paving/"
+  },
+  {
+    "id": 1586,
+    "name": "Restaurants & Takeaway",
+    "slug": "restaurants-takeaway",
+    "parent_id": 1371,
+    "parent_name": "Food and Beverage",
+    "count": 188,
+    "url": "https://ummahdirectory.com.au/category/food-and-beverage/restaurants-takeaway/"
+  },
+  {
+    "id": 1572,
+    "name": "Sales & Repairs",
+    "slug": "sales-repairs",
+    "parent_id": 1571,
+    "parent_name": "Computers",
+    "count": 0,
+    "url": "https://ummahdirectory.com.au/category/computers/sales-repairs/"
+  },
+  {
+    "id": 1624,
+    "name": "Sanding",
+    "slug": "sanding",
+    "parent_id": 1373,
+    "parent_name": "Home & Construction",
+    "count": 1,
+    "url": "https://ummahdirectory.com.au/category/trades/sanding/"
+  },
+  {
+    "id": 1626,
+    "name": "Scaffolding",
+    "slug": "scaffolding",
+    "parent_id": 1373,
+    "parent_name": "Home & Construction",
+    "count": 0,
+    "url": "https://ummahdirectory.com.au/category/trades/scaffolding/"
+  },
+  {
+    "id": 1587,
+    "name": "Seafood",
+    "slug": "seafood",
+    "parent_id": 1371,
+    "parent_name": "Food and Beverage",
+    "count": 0,
+    "url": "https://ummahdirectory.com.au/category/food-and-beverage/seafood/"
+  },
+  {
+    "id": 1625,
+    "name": "Sealing",
+    "slug": "sealing",
+    "parent_id": 1373,
+    "parent_name": "Home & Construction",
+    "count": 0,
+    "url": "https://ummahdirectory.com.au/category/trades/sealing/"
+  },
+  {
+    "id": 1637,
+    "name": "Security",
+    "slug": "security",
+    "parent_id": 1373,
+    "parent_name": "Home & Construction",
+    "count": 1,
+    "url": "https://ummahdirectory.com.au/category/trades/security/"
+  },
+  {
+    "id": 1639,
+    "name": "Skincare",
+    "slug": "skincare",
+    "parent_id": 1569,
+    "parent_name": "Beauty",
+    "count": 2,
+    "url": "https://ummahdirectory.com.au/category/beauticians/skincare/"
+  },
+  {
+    "id": 1878,
+    "name": "South Australia",
+    "slug": "south-australia",
+    "parent_id": 0,
+    "parent_name": "",
+    "count": 1,
+    "url": "https://ummahdirectory.com.au/category/south-australia/"
+  },
+  {
+    "id": 1588,
+    "name": "Spices & Herbs",
+    "slug": "spices-herbs",
+    "parent_id": 1371,
+    "parent_name": "Food and Beverage",
+    "count": 0,
+    "url": "https://ummahdirectory.com.au/category/food-and-beverage/spices-herbs/"
+  },
+  {
+    "id": 1875,
+    "name": "Tasmania",
+    "slug": "tasmania",
+    "parent_id": 0,
+    "parent_name": "",
+    "count": 0,
+    "url": "https://ummahdirectory.com.au/category/tasmania/"
+  },
+  {
+    "id": 1705,
+    "name": "Teeth Whitening",
+    "slug": "teeth-whitening",
+    "parent_id": 1569,
+    "parent_name": "Beauty",
+    "count": 3,
+    "url": "https://ummahdirectory.com.au/category/beauticians/teeth-whitening/"
+  },
+  {
+    "id": 1627,
+    "name": "Tilers",
+    "slug": "tilers",
+    "parent_id": 1373,
+    "parent_name": "Home & Construction",
+    "count": 1,
+    "url": "https://ummahdirectory.com.au/category/trades/tilers/"
+  },
+  {
+    "id": 1567,
+    "name": "Towing",
+    "slug": "towing",
+    "parent_id": 1513,
+    "parent_name": "Auto",
+    "count": 3,
+    "url": "https://ummahdirectory.com.au/category/auto/towing/"
+  },
+  {
+    "id": 1577,
+    "name": "Training",
+    "slug": "training",
+    "parent_id": 1492,
+    "parent_name": "Education",
+    "count": 2,
+    "url": "https://ummahdirectory.com.au/category/education/training/"
+  },
+  {
+    "id": 1816,
+    "name": "Translation",
+    "slug": "translation",
+    "parent_id": 1630,
+    "parent_name": "Professional Services",
+    "count": 1,
+    "url": "https://ummahdirectory.com.au/category/professional-services/translation/"
+  },
+  {
+    "id": 1641,
+    "name": "Travel Agents",
+    "slug": "travel-agents",
+    "parent_id": 1378,
+    "parent_name": "Commerce",
+    "count": 3,
+    "url": "https://ummahdirectory.com.au/category/commerce/travel-agents/"
+  },
+  {
+    "id": 1575,
+    "name": "Tutoring",
+    "slug": "tutoring",
+    "parent_id": 1492,
+    "parent_name": "Education",
+    "count": 1,
+    "url": "https://ummahdirectory.com.au/category/education/tutoring/"
+  },
+  {
+    "id": 1479,
+    "name": "Ummah Partner",
+    "slug": "ummah-partners",
+    "parent_id": 0,
+    "parent_name": "",
+    "count": 0,
+    "url": "https://ummahdirectory.com.au/category/ummah-partners/"
+  },
+  {
+    "id": 1873,
+    "name": "Victoria",
+    "slug": "victoria",
+    "parent_id": 0,
+    "parent_name": "",
+    "count": 297,
+    "url": "https://ummahdirectory.com.au/category/victoria/"
+  },
+  {
+    "id": 1628,
+    "name": "Waterproofing",
+    "slug": "waterproofing",
+    "parent_id": 1373,
+    "parent_name": "Home & Construction",
+    "count": 1,
+    "url": "https://ummahdirectory.com.au/category/trades/waterproofing/"
+  },
+  {
+    "id": 1550,
+    "name": "Wealth Management",
+    "slug": "wealth-management",
+    "parent_id": 1630,
+    "parent_name": "Professional Services",
+    "count": 2,
+    "url": "https://ummahdirectory.com.au/category/professional-services/wealth-management/"
+  },
+  {
+    "id": 1573,
+    "name": "Website Development",
+    "slug": "website-development",
+    "parent_id": 1571,
+    "parent_name": "Computers",
+    "count": 1,
+    "url": "https://ummahdirectory.com.au/category/computers/website-development/"
+  },
+  {
+    "id": 1877,
+    "name": "Western Australia",
+    "slug": "western-australia",
+    "parent_id": 0,
+    "parent_name": "",
+    "count": 4,
+    "url": "https://ummahdirectory.com.au/category/western-australia/"
+  },
+  {
+    "id": 1468,
+    "name": "Wheels & Tyres",
+    "slug": "auto-wheels-tyres",
+    "parent_id": 1513,
+    "parent_name": "Auto",
+    "count": 4,
+    "url": "https://ummahdirectory.com.au/category/auto/auto-wheels-tyres/"
+  },
+  {
+    "id": 1862,
+    "name": "Windows",
+    "slug": "windows",
+    "parent_id": 1373,
+    "parent_name": "Home & Construction",
+    "count": 2,
+    "url": "https://ummahdirectory.com.au/category/trades/windows/"
+  },
+  {
+    "id": 1568,
+    "name": "Wreckers",
+    "slug": "wreckers",
+    "parent_id": 1513,
+    "parent_name": "Auto",
+    "count": 0,
+    "url": "https://ummahdirectory.com.au/category/auto/wreckers/"
+  }
+]

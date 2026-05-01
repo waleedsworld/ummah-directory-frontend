@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ummah Directory</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://images.unsplash.com">
+    <link rel="preconnect" href="https://hoirqrkdgbmvpwutwuwj.supabase.co">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Inter:wght@300;400;500;600;700;800;900&family=Oswald:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+      #app-loader{position:fixed;inset:0;z-index:99999;display:grid;place-items:center;background:linear-gradient(180deg,rgba(11,16,26,.92),rgba(11,16,26,.98)),#0B101A;color:#F8F4EC;transition:opacity 420ms ease,visibility 420ms ease}#app-loader.app-loader--done{opacity:0;visibility:hidden}.app-loader__inner{width:min(420px,calc(100vw - 48px))}.app-loader__brand{font-family:Oswald,sans-serif;font-size:clamp(34px,7vw,68px);line-height:.95;letter-spacing:-.04em;text-transform:uppercase}.app-loader__line{height:2px;margin-top:22px;overflow:hidden;background:rgba(248,244,236,.18)}.app-loader__line span{display:block;width:46%;height:100%;background:#C8A96A;animation:app-loader-scan 1150ms cubic-bezier(.65,0,.35,1) infinite}.app-loader__copy{margin-top:14px;font-family:Inter,sans-serif;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:rgba(248,244,236,.66)}@keyframes app-loader-scan{0%{transform:translateX(-110%)}100%{transform:translateX(240%)}}
+    </style>
+  </head>
+  <body class="antialiased selection:bg-black/10 overflow-x-hidden bg-[#0B101A] m-0 p-0">
+    <div id="app-loader" role="status" aria-live="polite" aria-label="Loading Ummah Directory">
+      <div class="app-loader__inner">
+        <div class="app-loader__brand">Ummah Directory</div>
+        <div class="app-loader__line"><span></span></div>
+        <div class="app-loader__copy">Preparing the directory</div>
+      </div>
+    </div>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
