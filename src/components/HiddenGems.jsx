@@ -2,56 +2,67 @@ import React, { useEffect, useRef } from 'react';
 import { listings } from '../data/travelData';
 import { FALLBACK_IMAGE } from './SafeImage';
 
+const clamp = (value, min = 0, max = 1) => Math.min(Math.max(value, min), max);
+const smoothstep = value => {
+  const x = clamp(value);
+  return x * x * (3 - 2 * x);
+};
+
 const HiddenGems = () => {
   const sectionRef = useRef(null);
   const containerRef = useRef(null);
 
   useEffect(() => {
-    let isTicking = false;
+    let frameId = 0;
+    let lastProgress = -1;
 
     const updateScroll = () => {
+      frameId = 0;
       if (sectionRef.current && containerRef.current) {
         if (window.innerWidth < 768) {
           containerRef.current.style.transform = 'translate3d(0, 0, 0)';
-          isTicking = false;
+          lastProgress = -1;
           return;
         }
 
         const rect = sectionRef.current.getBoundingClientRect();
-        const windowHeight = window.visualViewport?.height || window.innerHeight;
-        const totalScroll = rect.height - windowHeight;
-        let progress = -rect.top / totalScroll;
-        progress = Math.max(0, Math.min(1, progress));
+        const windowHeight = window.visualViewport?.height || window.innerHeight || document.documentElement.clientHeight;
+        const totalScroll = Math.max(1, rect.height - windowHeight);
+        const progress = clamp(-rect.top / totalScroll);
+        if (Math.abs(progress - lastProgress) < 0.001) return;
+        lastProgress = progress;
 
-        const padding = window.innerWidth >= 768 ? 96 : 48;
-        const maxTranslate = Math.max(0, containerRef.current.scrollWidth - window.innerWidth + padding);
-        containerRef.current.style.transform = `translate3d(${-progress * maxTranslate}px, 0, 0)`;
+        const maxTranslate = Math.max(0, containerRef.current.scrollWidth - window.innerWidth + 96);
+        containerRef.current.style.transform = `translate3d(${-smoothstep(progress) * maxTranslate}px, 0, 0)`;
       }
-      isTicking = false;
     };
 
     const handleScrollOrResize = () => {
-      if (!isTicking) {
-        window.requestAnimationFrame(updateScroll);
-        isTicking = true;
-      }
+      if (!frameId) frameId = window.requestAnimationFrame(updateScroll);
+    };
+    const handleResize = () => {
+      lastProgress = -1;
+      handleScrollOrResize();
     };
 
     window.addEventListener('scroll', handleScrollOrResize, { passive: true });
-    window.addEventListener('resize', handleScrollOrResize, { passive: true });
+    window.addEventListener('resize', handleResize, { passive: true });
+    window.visualViewport?.addEventListener('resize', handleResize, { passive: true });
 
-    setTimeout(updateScroll, 100);
+    handleScrollOrResize();
 
     return () => {
+      cancelAnimationFrame(frameId);
       window.removeEventListener('scroll', handleScrollOrResize);
-      window.removeEventListener('resize', handleScrollOrResize);
+      window.removeEventListener('resize', handleResize);
+      window.visualViewport?.removeEventListener('resize', handleResize);
     };
   }, []);
 
-  const gems = listings.filter(item => item.image).slice(0, 32);
+  const gems = listings.filter(item => item.image).slice(0, 22);
 
   return (
-    <div className="relative z-20 h-auto w-full bg-[#F4F4F5] text-black md:h-[500vh]" id="hidden-gems-section" ref={sectionRef}>
+    <div className="relative z-20 h-auto w-full bg-[#F4F4F5] text-black md:h-[330vh]" id="hidden-gems-section" ref={sectionRef}>
       <div className="flex min-h-[100svh] w-full flex-col justify-center overflow-hidden md:sticky md:top-0 md:h-screen" style={{ paddingTop: 'clamp(3rem, 8vh, 6rem)', paddingBottom: 'clamp(2rem, 5vh, 4rem)' }}>
         <main className="flex flex-col w-full" style={{ gap: 'clamp(1.5rem, 3vh, 2.5rem)' }}>
           <div className="flex flex-col md:flex-row md:items-end md:pr-12 md:pl-12 shrink-0 pr-6 pl-6 items-start justify-between gap-4 md:gap-0">

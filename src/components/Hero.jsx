@@ -2,6 +2,12 @@ import React, { useEffect, useRef, useState } from 'react';
 import { categories } from '../data/travelData';
 import SafeImage from './SafeImage';
 
+const clamp = (value, min = 0, max = 1) => Math.min(Math.max(value, min), max);
+const smoothstep = value => {
+  const x = clamp(value);
+  return x * x * (3 - 2 * x);
+};
+
 const Hero = () => {
   const [searchOpen, setSearchOpen] = useState(false);
   const trackRef = useRef(null);
@@ -13,79 +19,73 @@ const Hero = () => {
   const whiteoutRef = useRef(null);
 
   useEffect(() => {
-    let scrollPos = 0;
-    let targetScrollPos = 0;
-    let animationFrameId;
-
-    const handleScroll = () => {
-      targetScrollPos = window.scrollY;
-    };
+    let animationFrameId = 0;
+    let lastProgress = -1;
 
     const viewportHeight = () => window.visualViewport?.height || window.innerHeight || document.documentElement.clientHeight;
-
-    window.addEventListener('scroll', handleScroll, { passive: true });
-
-    const renderAnimation = () => {
-      const isMobile = window.innerWidth < 768;
-      scrollPos += (targetScrollPos - scrollPos) * (isMobile ? 0.16 : 0.08);
-
-      if (trackRef.current) {
-        const trackHeight = trackRef.current.offsetHeight - viewportHeight();
-        let progress = 0;
-
-        if (trackHeight > 0) {
-          progress = Math.min(Math.max(scrollPos / trackHeight, 0), 1);
-        }
-
-        // 1. Camera Push
-        const easeZoom = Math.pow(progress, 3);
-        const scale = 1 + easeZoom * (isMobile ? 16 : 25);
-        const translateY = easeZoom * (isMobile ? 9 : 15);
-        if (sceneRef.current) sceneRef.current.style.transform = `scale(${scale}) translateY(${translateY}%)`;
-
-        // 2. Door Swinging Open
-        if (doorPanelRef.current) {
-          let angle = 0;
-          if (progress > 0.05) {
-            let doorProgress = Math.min((progress - 0.05) / 0.6, 1);
-            const easeDoor = Math.sin((doorProgress * Math.PI) / 2);
-            angle = -(easeDoor * (isMobile ? 98 : 115));
-          }
-          doorPanelRef.current.style.transform = `rotateY(${angle}deg) translateZ(2px)`;
-        }
-
-        // 3. Portal Content Reveal
-        if (portalContentRef.current && portalGlowRef.current) {
-          const revealProgress = Math.min(Math.max((progress - 0.1) / 0.4, 0), 1);
-          portalContentRef.current.style.opacity = revealProgress;
-          portalGlowRef.current.style.opacity = easeZoom * 1.5;
-        }
-
-        // 4. Parallax & Fade UI Elements
-        if (uiLayerRef.current) {
-          const uiOpacity = Math.max(1 - progress * 5, 0);
-          uiLayerRef.current.style.opacity = uiOpacity;
-          const uiParallax = progress * -100;
-          uiLayerRef.current.style.transform = `translateY(${uiParallax}px)`;
-        }
-
-        // 5. Whiteout Transition matching the background of the next section
-        if (whiteoutRef.current) {
-          if (progress > 0.8) {
-            whiteoutRef.current.style.opacity = (progress - 0.8) * 5;
-          } else {
-            whiteoutRef.current.style.opacity = 0;
-          }
-        }
-      }
-
-      animationFrameId = requestAnimationFrame(renderAnimation);
+    const measureProgress = () => {
+      if (!trackRef.current) return 0;
+      const rect = trackRef.current.getBoundingClientRect();
+      const scrollable = Math.max(1, rect.height - viewportHeight());
+      return clamp(-rect.top / scrollable);
     };
 
-    animationFrameId = requestAnimationFrame(renderAnimation);
+    const renderAnimation = () => {
+      animationFrameId = 0;
+      const progress = measureProgress();
+      if (Math.abs(progress - lastProgress) < 0.001) return;
+      lastProgress = progress;
+
+      const isMobile = window.innerWidth < 768;
+      const zoomProgress = smoothstep(progress);
+      const doorProgress = smoothstep((progress - 0.08) / 0.48);
+      const revealProgress = smoothstep((progress - 0.12) / 0.34);
+      const exitProgress = smoothstep((progress - 0.7) / 0.28);
+
+      if (sceneRef.current) {
+        const scale = 1 + zoomProgress * (isMobile ? 8.5 : 14);
+        const translateY = zoomProgress * (isMobile ? 5 : 8);
+        sceneRef.current.style.transform = `scale(${scale.toFixed(3)}) translate3d(0, ${translateY.toFixed(2)}%, 0)`;
+      }
+
+      if (doorPanelRef.current) {
+        const angle = -(doorProgress * (isMobile ? 94 : 108));
+        doorPanelRef.current.style.transform = `rotateY(${angle.toFixed(2)}deg) translateZ(2px)`;
+      }
+
+      if (portalContentRef.current && portalGlowRef.current) {
+        portalContentRef.current.style.opacity = revealProgress.toFixed(3);
+        portalGlowRef.current.style.opacity = Math.min(1, revealProgress * 1.15).toFixed(3);
+      }
+
+      if (uiLayerRef.current) {
+        const uiHide = smoothstep(progress / 0.32);
+        uiLayerRef.current.style.opacity = (1 - uiHide).toFixed(3);
+        uiLayerRef.current.style.transform = `translate3d(0, ${(-44 * uiHide).toFixed(2)}px, 0)`;
+      }
+
+      if (whiteoutRef.current) {
+        whiteoutRef.current.style.opacity = exitProgress.toFixed(3);
+      }
+    };
+
+    const requestRender = () => {
+      if (!animationFrameId) animationFrameId = requestAnimationFrame(renderAnimation);
+    };
+    const requestResizeRender = () => {
+      lastProgress = -1;
+      requestRender();
+    };
+
+    requestRender();
+    window.addEventListener('scroll', requestRender, { passive: true });
+    window.addEventListener('resize', requestResizeRender, { passive: true });
+    window.visualViewport?.addEventListener('resize', requestResizeRender, { passive: true });
 
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener('scroll', requestRender);
+      window.removeEventListener('resize', requestResizeRender);
+      window.visualViewport?.removeEventListener('resize', requestResizeRender);
       cancelAnimationFrame(animationFrameId);
     };
   }, []);
@@ -102,7 +102,7 @@ const Hero = () => {
   }, [searchOpen]);
 
   return (
-    <div className="z-10 bg-[#0B101A] w-full h-[230svh] md:h-[300vh] relative" id="scroll-track" ref={trackRef}>
+    <div className="z-10 bg-[#0B101A] w-full h-[205svh] md:h-[245vh] relative" id="scroll-track" ref={trackRef}>
       <div className="sticky overflow-hidden [perspective:1200px] w-full h-[100svh] top-0 right-0 bottom-0 left-0 md:h-screen">
         
         {/* 3D Scene Wrapper */}
@@ -150,7 +150,7 @@ const Hero = () => {
 
             {/* Realistic Wood Door Panel */}
             <div 
-              className="sm:inset-[12px] origin-left transition-transform duration-75 ease-out will-change-transform [transform:translateZ(2px)] flex flex-row z-20 overflow-hidden bg-[#4A3018] border-[#2D1B0E] border rounded-t-[148px] absolute top-[8px] right-[8px] bottom-[8px] left-[8px] shadow-[10px_0_20px_rgba(0,0,0,0.5)]" 
+              className="sm:inset-[12px] origin-left will-change-transform [transform:translateZ(2px)] flex flex-row z-20 overflow-hidden bg-[#4A3018] border-[#2D1B0E] border rounded-t-[148px] absolute top-[8px] right-[8px] bottom-[8px] left-[8px] shadow-[10px_0_20px_rgba(0,0,0,0.5)]"
               id="door-panel"
               ref={doorPanelRef}
             >
