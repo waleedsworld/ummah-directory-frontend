@@ -1,69 +1,13 @@
-import React, { useEffect, useRef } from 'react';
+import React from 'react';
 import { listings } from '../data/travelData';
 import { FALLBACK_IMAGE } from './SafeImage';
 
-const clamp = (value, min = 0, max = 1) => Math.min(Math.max(value, min), max);
-const smoothstep = value => {
-  const x = clamp(value);
-  return x * x * (3 - 2 * x);
-};
-
 const HiddenGems = () => {
-  const sectionRef = useRef(null);
-  const containerRef = useRef(null);
-
-  useEffect(() => {
-    let frameId = 0;
-    let lastProgress = -1;
-
-    const updateScroll = () => {
-      frameId = 0;
-      if (sectionRef.current && containerRef.current) {
-        if (window.innerWidth < 768) {
-          containerRef.current.style.transform = 'translate3d(0, 0, 0)';
-          lastProgress = -1;
-          return;
-        }
-
-        const rect = sectionRef.current.getBoundingClientRect();
-        const windowHeight = window.visualViewport?.height || window.innerHeight || document.documentElement.clientHeight;
-        const totalScroll = Math.max(1, rect.height - windowHeight);
-        const progress = clamp(-rect.top / totalScroll);
-        if (Math.abs(progress - lastProgress) < 0.001) return;
-        lastProgress = progress;
-
-        const maxTranslate = Math.max(0, containerRef.current.scrollWidth - window.innerWidth + 96);
-        containerRef.current.style.transform = `translate3d(${-smoothstep(progress) * maxTranslate}px, 0, 0)`;
-      }
-    };
-
-    const handleScrollOrResize = () => {
-      if (!frameId) frameId = window.requestAnimationFrame(updateScroll);
-    };
-    const handleResize = () => {
-      lastProgress = -1;
-      handleScrollOrResize();
-    };
-
-    window.addEventListener('scroll', handleScrollOrResize, { passive: true });
-    window.addEventListener('resize', handleResize, { passive: true });
-    window.visualViewport?.addEventListener('resize', handleResize, { passive: true });
-
-    handleScrollOrResize();
-
-    return () => {
-      cancelAnimationFrame(frameId);
-      window.removeEventListener('scroll', handleScrollOrResize);
-      window.removeEventListener('resize', handleResize);
-      window.visualViewport?.removeEventListener('resize', handleResize);
-    };
-  }, []);
-
   const gems = listings.filter(item => item.image).slice(0, 22);
 
   return (
-    <div className="relative z-20 h-auto w-full bg-[#F4F4F5] text-black md:h-[330vh]" id="hidden-gems-section" ref={sectionRef}>
-      <div className="flex min-h-[100svh] w-full flex-col justify-center overflow-hidden md:sticky md:top-0 md:h-screen" style={{ paddingTop: 'clamp(3rem, 8vh, 6rem)', paddingBottom: 'clamp(2rem, 5vh, 4rem)' }}>
+    <div className="relative z-20 h-auto w-full bg-[#F4F4F5] text-black" id="hidden-gems-section">
+      <div className="flex w-full flex-col justify-center overflow-hidden py-14 md:min-h-screen md:py-20">
         <main className="flex flex-col w-full" style={{ gap: 'clamp(1.5rem, 3vh, 2.5rem)' }}>
           <div className="flex flex-col md:flex-row md:items-end md:pr-12 md:pl-12 shrink-0 pr-6 pl-6 items-start justify-between gap-4 md:gap-0">
             <div className="md:w-72 lg:w-80 leading-relaxed order-2 md:order-1 hidden sm:block text-xs font-light text-[#1F3E3D]/70 w-full">
@@ -77,7 +21,7 @@ const HiddenGems = () => {
             </div>
           </div>
 
-          <div className="hide-scrollbar flex w-full snap-x snap-mandatory overflow-x-auto overscroll-x-contain pl-6 will-change-transform md:w-max md:overflow-visible md:pl-12" style={{ gap: 'clamp(0.75rem, 1.5vw, 1.25rem)', paddingRight: '1.5rem', paddingBottom: '1rem' }} id="horizontal-scroll-container" ref={containerRef}>
+          <div className="hide-scrollbar flex w-full snap-x snap-mandatory overflow-x-auto overscroll-x-contain pl-6 md:pl-12" style={{ gap: 'clamp(0.75rem, 1.5vw, 1.25rem)', paddingRight: '1.5rem', paddingBottom: '1rem' }} id="horizontal-scroll-container">
             {gems.map((gem, index) => (
               <a key={gem.slug} href={`/listing/${gem.slug}`} style={{ width: 'clamp(200px, 55vw, 300px)', height: 'clamp(320px, 45vh, 480px)', flexShrink: 0 }} aria-label={`Open ${gem.title}`} className="relative block snap-start overflow-hidden rounded-2xl border border-black/5 bg-[#1A1A1A] shadow-xl group cursor-pointer">
                 <div className="absolute inset-0 bg-cover bg-center transition-transform duration-[1.5s] ease-[cubic-bezier(0.25,0.46,0.45,0.94)] group-hover:scale-105" style={{ backgroundImage: `url('${gem.image || FALLBACK_IMAGE}'), url('${FALLBACK_IMAGE}')` }}></div>

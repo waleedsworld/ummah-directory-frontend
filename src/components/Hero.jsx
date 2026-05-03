@@ -37,14 +37,14 @@ const Hero = () => {
       lastProgress = progress;
 
       const isMobile = window.innerWidth < 768;
-      const zoomProgress = smoothstep(progress);
+      const zoomProgress = smoothstep(progress * 0.9);
       const doorProgress = smoothstep((progress - 0.08) / 0.48);
       const revealProgress = smoothstep((progress - 0.12) / 0.34);
       const exitProgress = smoothstep((progress - 0.7) / 0.28);
 
       if (sceneRef.current) {
-        const scale = 1 + zoomProgress * (isMobile ? 8.5 : 14);
-        const translateY = zoomProgress * (isMobile ? 5 : 8);
+        const scale = 1 + zoomProgress * (isMobile ? 0.62 : 0.92);
+        const translateY = zoomProgress * (isMobile ? 2.5 : 3.5);
         sceneRef.current.style.transform = `scale(${scale.toFixed(3)}) translate3d(0, ${translateY.toFixed(2)}%, 0)`;
       }
 
@@ -102,7 +102,7 @@ const Hero = () => {
   }, [searchOpen]);
 
   return (
-    <div className="z-10 bg-[#0B101A] w-full h-[205svh] md:h-[245vh] relative" id="scroll-track" ref={trackRef}>
+    <div className="z-10 bg-[#0B101A] w-full h-[150svh] md:h-[170vh] relative" id="scroll-track" ref={trackRef}>
       <div className="sticky overflow-hidden [perspective:1200px] w-full h-[100svh] top-0 right-0 bottom-0 left-0 md:h-screen">
         
         {/* 3D Scene Wrapper */}

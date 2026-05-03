@@ -2,11 +2,6 @@ import React, { useEffect, useRef, useState } from 'react';
 
 const API_BASE_URL = 'https://aitest.techrealm.online';
 const ASSISTANT_CONNECTION_MESSAGE = 'The directory assistant is reconnecting right now. Please try again in a moment.';
-const clamp = (value, min = 0, max = 1) => Math.min(Math.max(value, min), max);
-const smoothstep = value => {
-  const x = clamp(value);
-  return x * x * (3 - 2 * x);
-};
 
 const starters = [
   'I am in Coburg and want halal dinner',
@@ -63,56 +58,14 @@ const LandingAssistantReveal = () => {
   ]);
 
   useEffect(() => {
-    let frameId = 0;
-    let lastProgress = -1;
-    const mobileObserver = new IntersectionObserver((entries) => {
+    const revealObserver = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) entry.target.classList.add('is-visible');
       });
-    }, { rootMargin: '0px 0px -12% 0px', threshold: 0.08 });
-    if (mobileCardRef.current) mobileObserver.observe(mobileCardRef.current);
-
-    const update = () => {
-      frameId = 0;
-      if (!sectionRef.current || !cardRef.current) return;
-      if (window.innerWidth < 768) {
-        cardRef.current.style.opacity = '';
-        cardRef.current.style.transform = '';
-        sectionRef.current.style.setProperty('--gateway-wash', '0.55');
-        lastProgress = -1;
-        return;
-      }
-      const rect = sectionRef.current.getBoundingClientRect();
-      const view = window.visualViewport?.height || window.innerHeight || document.documentElement.clientHeight;
-      const scrollable = Math.max(1, rect.height - view);
-      const progress = clamp(-rect.top / scrollable);
-      if (Math.abs(progress - lastProgress) < 0.001) return;
-      lastProgress = progress;
-      const eased = smoothstep(progress);
-      const reveal = smoothstep((progress - 0.18) / 0.58);
-      cardRef.current.style.opacity = reveal;
-      cardRef.current.style.transform = `translate3d(${(-42 + reveal * 42).toFixed(2)}vw, ${(26 - reveal * 26).toFixed(2)}px, 0) rotateY(${(-34 + reveal * 34).toFixed(2)}deg) scale(${(0.92 + reveal * 0.08).toFixed(3)})`;
-      sectionRef.current.style.setProperty('--gateway-wash', eased.toFixed(3));
-    };
-
-    const requestUpdate = () => {
-      if (!frameId) frameId = requestAnimationFrame(update);
-    };
-    const requestResizeUpdate = () => {
-      lastProgress = -1;
-      requestUpdate();
-    };
-
-    requestUpdate();
-    window.addEventListener('scroll', requestUpdate, { passive: true });
-    window.addEventListener('resize', requestResizeUpdate, { passive: true });
-    window.visualViewport?.addEventListener('resize', requestResizeUpdate, { passive: true });
+    }, { rootMargin: '0px 0px -18% 0px', threshold: 0.12 });
+    if (mobileCardRef.current) revealObserver.observe(mobileCardRef.current);
     return () => {
-      cancelAnimationFrame(frameId);
-      mobileObserver.disconnect();
-      window.removeEventListener('scroll', requestUpdate);
-      window.removeEventListener('resize', requestResizeUpdate);
-      window.visualViewport?.removeEventListener('resize', requestResizeUpdate);
+      revealObserver.disconnect();
     };
   }, []);
 
@@ -164,9 +117,9 @@ const LandingAssistantReveal = () => {
   };
 
   return (
-    <section ref={sectionRef} className="assistant-gateway relative z-20 bg-[#F4F4F5] md:h-[210vh]" style={{ '--gateway-wash': 0 }}>
-      <div className="flex min-h-[105svh] items-start justify-center overflow-hidden px-4 pb-10 pt-[18svh] md:sticky md:top-0 md:h-screen md:min-h-0 md:items-center md:px-12 md:py-8">
-        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_50%_120%,rgba(31,62,61,0.10),transparent_46%)] opacity-[var(--gateway-wash)]"></div>
+    <section ref={sectionRef} className="assistant-gateway relative z-20 bg-[#F4F4F5]" style={{ '--gateway-wash': 0.55 }}>
+      <div className="flex min-h-[100svh] items-center justify-center overflow-hidden px-4 py-12 md:min-h-screen md:px-12 md:py-16">
+        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_50%_120%,rgba(31,62,61,0.10),transparent_46%)] opacity-60"></div>
         <div className="pointer-events-none absolute bottom-8 left-1/2 h-1 w-14 -translate-x-1/2 rounded-full bg-[#1F3E3D]/35"></div>
 
         <div ref={(node) => { cardRef.current = node; mobileCardRef.current = node; }} className="assistant-flip-card mobile-assistant-card relative w-full max-w-7xl border border-[#1F3E3D]/12 bg-[#ECEFEB] shadow-[0_30px_90px_rgba(31,62,61,0.14)] will-change-transform">
