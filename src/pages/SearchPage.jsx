@@ -1,6 +1,6 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import Footer from '../components/Footer';
-import { API_BASE_URL, categories, listings } from '../data/travelData';
+import { API_BASE_URL, categories, groupListingFamilies, listings } from '../data/travelData';
 import SafeImage from '../components/SafeImage';
 
 const params = new URLSearchParams(window.location.search);
@@ -51,10 +51,9 @@ const localSmartSearch = (q, category, contact) => {
     .map(listing => ({ listing, score: scoreListing(listing, terms) }))
     .filter(item => !q || item.score > 0)
     .sort((a, b) => b.score - a.score || a.listing.title.localeCompare(b.listing.title))
-    .map(item => item.listing)
-    .slice(0, 96);
+    .map(item => item.listing);
 
-  return ranked;
+  return groupListingFamilies(ranked).map(group => group.lead).slice(0, 96);
 };
 
 const suggestionSeeds = query
@@ -65,7 +64,7 @@ const SearchPage = () => {
   const [smartData, setSmartData] = useState(null);
   const q = query.toLowerCase().trim();
   const activeCategory = categories.find(category => category.slug === categorySlug);
-  const localResults = useMemo(() => localSmartSearch(q, categorySlug, contactFilter), [q]);
+  const localResults = useMemo(() => localSmartSearch(q, categorySlug, contactFilter), [q, categorySlug, contactFilter]);
 
   useEffect(() => {
     const controller = new AbortController();
@@ -168,6 +167,7 @@ const SearchPage = () => {
                   <div className="mt-4 flex flex-wrap gap-x-4 gap-y-2 text-xs text-[#2A3324]/58">
                     <span>{listing.phone && listing.phone !== 'Not listed' ? 'Phone listed' : 'No phone listed'}</span>
                     <span>{listing.email ? 'Email listed' : 'No email listed'}</span>
+                    {listing.branchCount > 0 && <span>{listing.branchCount} more branch{listing.branchCount === 1 ? '' : 'es'}</span>}
                   </div>
                 </div>
               </a>

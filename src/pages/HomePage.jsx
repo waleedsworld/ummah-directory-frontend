@@ -1,10 +1,10 @@
 import React from 'react';
 import Footer from '../components/Footer';
-import { categories, listings, sourceMeta, ummahAbout } from '../data/travelData';
+import { categories, sourceMeta, ummahAbout, visibleListings } from '../data/travelData';
 import SafeImage from '../components/SafeImage';
 
-const featured = listings.filter(item => item.image).slice(0, 8);
-const partnerListings = listings.filter(item => item.approvalBadge).slice(0, 6);
+const featured = visibleListings.filter(item => item.image).slice(0, 8);
+const partnerListings = visibleListings.filter(item => item.approvalBadge).slice(0, 6);
 
 const HomePage = () => (
   <div className="min-h-screen bg-[#E3E7E0] text-[#2A3324]">
@@ -108,6 +108,9 @@ const HomePage = () => (
                 <div className="text-xs uppercase tracking-[0.18em] text-[#2A3324]/50">{listing.region}</div>
                 <h3 className="mt-2 font-editorial text-3xl leading-tight">{listing.title}</h3>
                 <p className="mt-3 text-sm leading-6 text-[#2A3324]/66">{listing.location}</p>
+                {listing.branchCount > 0 && (
+                  <p className="mt-3 text-xs uppercase tracking-[0.16em] text-[#2A3324]/48">{listing.branchCount} more branch{listing.branchCount === 1 ? '' : 'es'}</p>
+                )}
               </div>
             </a>
           ))}

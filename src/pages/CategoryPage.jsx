@@ -79,21 +79,6 @@ const ListingArchiveRow = ({ listing, index }) => (
   </a>
 );
 
-const listingFamilyKey = listing => {
-  const title = `${listing.title || ''}`.toLowerCase();
-  const familyPatterns = [
-    'philliez',
-    "mustafa's kebabs",
-    'glenroy kebabs',
-    'afghan master kebab',
-    'ziyka',
-    'burger road',
-    'garlik kebabery',
-  ];
-  const family = familyPatterns.find(pattern => title.includes(pattern));
-  return family || `${listing.title || ''}`.toLowerCase().replace(/\s+/g, ' ').trim();
-};
-
 const CategoryPage = ({ slug }) => {
   const category = getCategory(slug) || categories[0];
   const categoryListings = getListingsByCategory(category.slug);
@@ -115,16 +100,9 @@ const CategoryPage = ({ slug }) => {
   const leadListing = categoryListings[0] || allListings[0];
   const secondaryListings = categoryListings.slice(1);
   const archiveGroups = useMemo(() => {
-    const groups = new Map();
-    categoryListings.forEach(listing => {
-      const key = listingFamilyKey(listing);
-      if (!groups.has(key)) groups.set(key, []);
-      groups.get(key).push(listing);
-    });
-
-    return [...groups.values()].map(group => ({
-      lead: group[0],
-      branches: group.slice(1),
+    return categoryListings.map(listing => ({
+      lead: listing,
+      branches: listing.branchListings || [],
     }));
   }, [categoryListings]);
   const childCategoryCounts = useMemo(() => {

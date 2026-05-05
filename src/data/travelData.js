@@ -235,6 +235,35 @@ const findPrimaryCategorySlug = listing => {
 
 const deterministicRating = id => Number((4.3 + (Number(id) % 7) / 10).toFixed(1));
 
+const normalizeFamilyText = value => String(value || '')
+  .toLowerCase()
+  .replace(/&amp;/g, '&')
+  .replace(/[–—]/g, ' - ')
+  .replace(/[^a-z0-9]+/g, ' ')
+  .trim();
+
+const titleTokens = value => normalizeFamilyText(value).split(/\s+/).filter(Boolean);
+
+const commonPrefix = values => {
+  const tokenSets = values.map(titleTokens).filter(tokens => tokens.length);
+  if (!tokenSets.length) return '';
+  const prefix = [];
+  const limit = Math.min(...tokenSets.map(tokens => tokens.length));
+
+  for (let index = 0; index < limit; index += 1) {
+    const token = tokenSets[0][index];
+    if (!tokenSets.every(tokens => tokens[index] === token)) break;
+    prefix.push(token);
+  }
+
+  return prefix.join(' ');
+};
+
+const canonicalSourceImage = value => String(value || '')
+  .replace(/\?.*$/, '')
+  .replace(/-\d+x\d+(?=\.)/, '')
+  .toLowerCase();
+
 const buildHighlights = listing => {
   const values = [...(listing.category_names || [])].filter(Boolean);
   return [...new Set(values)].slice(0, 4);
@@ -289,6 +318,8 @@ const mapListing = listing => {
     id: Number(listing.id),
     slug: listing.slug || `listing-${listing.id}`,
     title: listing.title || 'Untitled listing',
+    sourceImage: listing.image || '',
+    sourceImageKey: canonicalSourceImage(listing.image),
     category: categorySlug,
     location,
     region: categoryNames[0] || 'Ummah Directory',
@@ -339,6 +370,46 @@ const mapListing = listing => {
 export const listings = rawListings.map(mapListing);
 export const normalizeApiListing = mapListing;
 
+export const groupListingFamilies = items => {
+  const logoGroups = new Map();
+  const fallbackGroups = [];
+
+  items.forEach(listing => {
+    if (!listing.sourceImageKey) {
+      fallbackGroups.push([listing]);
+      return;
+    }
+
+    if (!logoGroups.has(listing.sourceImageKey)) logoGroups.set(listing.sourceImageKey, []);
+    logoGroups.get(listing.sourceImageKey).push(listing);
+  });
+
+  const groups = [];
+  logoGroups.forEach(group => {
+    const familyKey = commonPrefix(group.map(listing => listing.title));
+    if (!familyKey || familyKey.length < 4) {
+      group.forEach(listing => groups.push({ items: [listing], firstIndex: items.indexOf(listing) }));
+      return;
+    }
+
+    groups.push({ items: group, firstIndex: items.indexOf(group[0]) });
+  });
+
+  return [
+    ...groups,
+    ...fallbackGroups.map(group => ({ items: group, firstIndex: items.indexOf(group[0]) })),
+  ]
+    .map(({ items: group, firstIndex }) => ({
+      lead: { ...group[0], branchListings: group.slice(1), branchCount: group.length - 1 },
+      branches: group.slice(1),
+      familyKey: group[0].sourceImageKey || group[0].slug,
+      firstIndex,
+    }))
+    .sort((a, b) => a.firstIndex - b.firstIndex);
+};
+
+export const visibleListings = groupListingFamilies(listings).map(group => group.lead);
+
 export const getCategory = slug => categories.find(category => category.slug === slug) || allCategories.find(category => category.slug === slug);
 export const getListing = slugOrId => listings.find(listing => listing.slug === slugOrId || String(listing.id) === String(slugOrId));
 export const getListingsByCategory = slug => {
@@ -348,14 +419,16 @@ export const getListingsByCategory = slug => {
     : listings.filter(listing => listing.category_ids?.some(id => ids.has(Number(id))));
 
   const seen = new Set();
-  return matches.filter(listing => {
-    const key = `${listing.title}`.toLowerCase().replace(/\s+/g, ' ').trim();
-    const addressKey = `${listing.address}`.toLowerCase().replace(/\s+/g, ' ').trim();
+  const uniqueMatches = matches.filter(listing => {
+    const key = normalizeFamilyText(listing.title);
+    const addressKey = normalizeFamilyText(listing.address);
     const composite = addressKey && addressKey !== 'address not listed' ? `${key}|${addressKey}` : key;
     if (seen.has(composite)) return false;
     seen.add(composite);
     return true;
   });
+
+  return groupListingFamilies(uniqueMatches).map(group => group.lead);
 };
 export const getCategoryForListing = listing => getCategory(listing?.category) || categories[0];
 
